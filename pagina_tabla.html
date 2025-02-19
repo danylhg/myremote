@@ -3,15 +3,19 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Tablas</title>
+        <title>Tabla con 20 Elementos</title>
+        <link rel="stylesheet" type="text/css" href="tablet.css">
     </head>
     <body>
         <h1>Listas de postres</h1>
         <table border=1>
                <thead>
                   <tr>
-                    <th>Nombre</th>
-                    <th>Precio</th>
+                    <th rowspan="2">Nombre</th>
+                    <th rowspan="2">Precio</th>
+                    <th colspan="2">Información Nutrimental</th>
+                  </tr>
+                  <tr>
                     <th>Calorias</th>
                     <th>Ingredientes</th>
                   </tr>
@@ -49,7 +53,9 @@
                      </tr>
                   </tbody>
                <tfoot>
-
+                <tr>
+                    <td colspan="4">Fuente: GondonRansid.org</td>
+                </tr>
                </tfoot>
 
         </table>
