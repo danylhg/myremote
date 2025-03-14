@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--METADATAS-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniela Hdez.">
+    <meta name="description" content="proyecto de prueba">
+    <meta name="keywords" content="html, css, javascript, react, express">
+
+    <!--titulo de la pagina-->
+    <title>Pagina personal de Dani</title>
+
+    <!--favicon .png, .jpg, .jpeg, .svg-->
+    <link rel="icon" type="imagen/x-icon" href="helado.png">
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style-demo.css">
+
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+
+    <!--iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-md navar-ligth">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-Toggler"><img src="helado.png" width="50px" alt="icono del usuario">
+            <a class="navbar-brand" href="#"></a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Acerca de mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mis proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testimonios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" >Contacto</a>
+              </li>
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
+
+      <!-- SECCION PRINCIPAL (HERO)-->
+       <section class="hero align-items-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+          <img class="hero-imagen-estudiante rounded-circle" src="perfil.png" alt="imagen del estudiante">
+          <h1>Hola, soy Dani</h1>
+          <h2>Soy estudiante de Ingeneria en la UCC</h2>
+        </div>
+
+        <div class="hero-inferior">
+          <img class="hero-inferior-imagen img-fluid" src="computadora.jpg" alt="imagen de una computadora">
+
+        </div>
+       </section>
+
+       <section id="sobre-me" class="sobre-mi seccion-oscura">
+        <div class="contenedor">
+             <h2 class="seccion-titulo">Conociendo a Dani</h2>
+             <p class="seccion-texto">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quas unde suscipit corrupti explicabo quae adipisci tempora repellendus. Aperiam magni tempora laborum sit a. Odit nemo minima doloremque autem pariatur!
+             </p>
+        </div>
+       </section>
+<!--conocimientos-->
+       <section class="experiencia seccion-clara">
+
+         <div class="container test-center">
+
+          <div class="row">
+
+          <!--conocimientos como desarrollador-->
+          <div class=" columna col-12 col-md-4">
+             <i class="bi bi-laptop"></i>
+             <p class="experiencia-titulo">Desarrollador Web </p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia placeat exercitationem doloribus reprehenderit commodi, ut illo sit ipsa eligendi ipsum ullam, officiis error molestiae omnis magni, tenetur incidunt. Similique, mollitia.</p>
+             <div>
+             <span class="badge text-bg-info">javascript</span>
+             <span class="badge text-bg-info">Python</span>
+             <span class="badge text-bg-info">Ruby</span>
+           </div>
+            </div>
+
+            <div class=" columna col-12 col-md-4">
+              <i class="bi bi-headphones"></i>
+              <p class="experiencia-titulo">Desarrollador Web </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia placeat exercitationem doloribus reprehenderit commodi, ut illo sit ipsa eligendi ipsum ullam, officiis error molestiae omnis magni, tenetur incidunt. Similique, mollitia.</p>
+              <div>
+              <span class="badge text-bg-info">javascript</span>
+              <span class="badge text-bg-info">Python</span>
+              <span class="badge text-bg-info">Ruby</span>
+            </div>
+             </div>
+
+             <div class=" columna col-12 col-md-4">
+              <i class="bi bi-cloud-drizzle"></i>
+              <p class="experiencia-titulo">Desarrollador Web </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia placeat exercitationem doloribus reprehenderit commodi, ut illo sit ipsa eligendi ipsum ullam, officiis error molestiae omnis magni, tenetur incidunt. Similique, mollitia.</p>
+              <div>
+              <span class="badge text-bg-info">javascript</span>
+              <span class="badge text-bg-info">Python</span>
+              <span class="badge text-bg-info">Ruby</span>
+            </div>
+             </div>
+
+          </div>
+
+         </div>
+
+       </section>
+
+       <!--proyectos academicos-->
+       <section class="proyectos-recientes seccion-clara d-flex flex-column">
+          <h2 class="seccion-titulo"> Mis proyectos academicos</h2>
+          <h3 class="seccion-descripcion"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe error ex nemo blanditiis, amet molestiae. Veniam beatae tempora eius quidem voluptatibus provident voluptas mollitia esse exercitationem! Architecto sequi non adipisci.</h3>
+          <div class="container text-center proyectos-contenedor">
+            <div class="row">
+              <!--primer proyecto-->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="computadora.jpg" alt="computadora">
+                  <div class="overlay">
+                    <p>Mi primer proyecto</p>
+                    <div class="iconos-contenedor">
+                      <a href="#"><i class="bi bi-github"></i></a>
+                      <a href="#"><i class="bi bi-cloud-lightning-rain"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="computadora.jpg" alt="computadora">
+                  <div class="overlay">
+                    <p>Mi primer proyecto</p>
+                    <div class="iconos-contenedor">
+                      <a href="#"><i class="bi bi-github"></i></a>
+                      <a href="#"><i class="bi bi-cloud-lightning-rain"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="computadora.jpg" alt="computadora">
+                  <div class="overlay">
+                    <p>Mi primer proyecto</p>
+                    <div class="iconos-contenedor">
+                      <a href="#"><i class="bi bi-github"></i></a>
+                      <a href="#"><i class="bi bi-cloud-lightning-rain"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="computadora.jpg" alt="computadora">
+                  <div class="overlay">
+                    <p>Mi primer proyecto</p>
+                    <div class="iconos-contenedor">
+                      <a href="#"><i class="bi bi-github"></i></a>
+                      <a href="#"><i class="bi bi-cloud-lightning-rain"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="computadora.jpg" alt="computadora">
+                  <div class="overlay">
+                    <p>Mi primer proyecto</p>
+                    <div class="iconos-contenedor">
+                      <a href="#"><i class="bi bi-github"></i></a>
+                      <a href="#"><i class="bi bi-cloud-lightning-rain"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="computadora.jpg" alt="computadora">
+                  <div class="overlay">
+                    <p>Mi primer proyecto</p>
+                    <div class="iconos-contenedor">
+                      <a href="#"><i class="bi bi-github"></i></a>
+                      <a href="#"><i class="bi bi-cloud-lightning-rain"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+       </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
