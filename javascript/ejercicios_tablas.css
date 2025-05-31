@@ -1,0 +1,78 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #88a2dd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(166, 221, 160);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(197, 192, 213);
+}
+
+
+  
+/* Fuente general y fondo */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  /* Título */
+  h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor del formulario */
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  /* Inputs personalizados */
+  input[type="text"] {
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 180px;
+    transition: all 0.3s ease;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+  }
+  
+  input[type="text"]:focus {
+    border-color: #a855f7;
+    box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2);
+    outline: none;
+  }
+  
+  /* Botón estilizado */
+  button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #5c8cdf, #a855f7);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.4);
+  }
+  
+  

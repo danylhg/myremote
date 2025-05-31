@@ -1,0 +1,76 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #88a2dd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(166, 221, 160);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(197, 192, 213);
+}
+
+
+.btn {
+    padding: 6px 12px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn-editar {
+    background-color: #4CAF50;
+}
+
+.btn-eliminar {
+    background-color: powderblue;
+}
+
+.form-contenedor {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+}
+
+.form-content input, .form-content button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.form-content button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-content button:hover {
+    background-color: #45A049;
+}
+
+p {
+    text-align: center;
+}
