@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Vehículos</title>
+</head>
+<body>
+    <h1>Gestión de Vehículos</h1>
+
+    <!-- INSERTAR -->
+    <h2>Insertar Vehículo</h2>
+    <form action="http://localhost:3000/insertar" method="post">
+        <label>ID:
+            <input type="text" name="id" required>
+        </label><br><br>
+        <label>Marca:
+            <input type="text" name="marca" required>
+        </label><br><br>
+        <label>Modelo:
+            <input type="text" name="modelo" required>
+        </label><br><br>
+        <label>Placa:
+            <input type="text" name="placa" required>
+        </label><br><br>
+        <label>Color:
+            <input type="text" name="color" required>
+        </label><br><br>
+        <label>Año:
+            <input type="number" name="año" required>
+        </label><br><br>
+        <input type="submit" value="Insertar">
+    </form>
+
+    <hr>
+
+    <!-- CONSULTAR -->
+    <h2>Consultar Vehículo</h2>
+    <form onsubmit="consultar(event)">
+        <label>ID:
+            <input type="text" id="idConsulta" required>
+        </label>
+        <input type="submit" value="Consultar">
+    </form>
+    <pre id="resultadoConsulta"></pre>
+
+    <hr>
+
+    <!-- ACTUALIZAR -->
+    <h2>Actualizar Vehículo</h2>
+    <form action="http://localhost:3000/actualizar" method="post">
+        <label>ID:
+            <input type="text" name="id" required>
+        </label><br><br>
+        <label>Nueva Marca:
+            <input type="text" name="marca">
+        </label><br><br>
+        <label>Nuevo Modelo:
+            <input type="text" name="modelo">
+        </label><br><br>
+        <label>Nueva Placa:
+            <input type="text" name="placa">
+        </label><br><br>
+        <label>Nuevo Color:
+            <input type="text" name="color">
+        </label><br><br>
+        <label>Nuevo Año:
+            <input type="number" name="año">
+        </label><br><br>
+        <input type="submit" value="Actualizar">
+    </form>
+
+    <hr>
+
+    <!-- ELIMINAR -->
+    <h2>Eliminar Vehículo</h2>
+    <form action="http://localhost:3000/eliminar" method="post">
+        <label>ID:
+            <input type="text" name="id" required>
+        </label>
+        <input type="submit" value="Eliminar">
+    </form>
+
+    <!-- Script para la consulta -->
+    <script>
+        async function consultar(e) {
+            e.preventDefault();
+            const id = document.getElementById("idConsulta").value;
+            const res = await fetch("http://localhost:3000/consultar", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ id })
+            });
+            const data = await res.json();
+            document.getElementById("resultadoConsulta").innerText = JSON.stringify(data, null, 2);
+        }
+    </script>
+</body>
+</html>
+
+
