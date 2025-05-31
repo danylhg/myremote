@@ -1,0 +1,55 @@
+<!--*1.- crear una aplicación CRUD que permita gestionar el siguiente tipo de documento en Mongodb Atlas:
+{
+    id:id,
+    marca:marca,
+    modelo:modelo,
+    placa:placa,
+    color:color,
+    año:año
+}
+
+2.- debe crear un formulario que permita realizar inserciones, actualizaciones, consultas y eliminaciones.
+
+3.- subir a su repositorio como una carpeta con nombre "RETO_CRUD"-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario CRUD</title>
+</head>
+<body>
+
+    <h1>Vehículo</h1>
+    <form action="http://localhost:3000/insertar" method="post">
+        <label>
+            ID:
+            <input type="text" name="usuario" id="usuario">
+        </label><br><br>
+        <label>
+            Marca:
+            <input type="password" name="password" id="password">
+        </label>
+        <label>
+            Modelo:
+            <input type="password" name="password" id="password">
+        </label>
+
+        <input type="submit" value="insertar">
+    </form>
+
+    <h2>Consultar</h2>
+
+    <form action="http://localhost:3000/consultar" method="post">
+        <label>
+            Usuario:
+            <input type="text" name="usuario" id="usuario">
+        </label><br><br>
+       
+
+        <input type="submit" value="insertar">
+    </form>
+    
+</body>
+</html>

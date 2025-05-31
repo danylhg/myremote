@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4a90e2, #1456a3);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor del login */
+.login-container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Título */
+.login-container h1 {
+    margin-bottom: 24px;
+    color: #333;
+    font-size: 28px;
+}
+
+/* Grupo de formulario */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Etiquetas */
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Campos de entrada */
+.form-group input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Botón de enviar */
+.submit-btn {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #367bc1;
+}

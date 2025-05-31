@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    
+        <div class="login-container">
+            <h1>Iniciar Sesión</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Usuario</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="submit-btn">Entrar</button>
+            </form>
+        </div>
+    
+        <script>
+            document.getElementById("loginForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Detiene el envío
+    
+                const username = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+    
+                // Cambia estos datos por los que quieras usar
+                const validUser = "dani";
+                const validPass = "123";
+    
+                if (username === validUser && password === validPass) {
+                    alert("Acceso concedido");
+                    
+                } else {
+                    alert("Usuario o contraseña incorrectos");
+                }
+            });
+        </script>
+
+    
+</body>
+
+</html>
