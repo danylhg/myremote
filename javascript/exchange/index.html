@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💱 Conversor de Divisas</title>
+    <link rel="stylesheet" href="exchange.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Conversión de Moneda</h1>
+        <label for="currency">Selecciona moneda:</label>
+        <select id="currency">
+            <option value="EUR">Euro (EUR)</option>
+            <option value="MXN">Peso Mexicano (MXN)</option>
+            <option value="GBP">Libra Esterlina (GBP)</option>
+            <option value="JPY">Yen Japonés (JPY)</option>
+        </select>
+        <button onclick="getExchangeRate()">Obtener tasa</button>
+        <div id="exchange-rate"></div>
+    </div>
+
+    <script src="exchange.js"></script>
+</body>
+</html>
